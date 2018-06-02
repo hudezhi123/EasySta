@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_already_submit_form"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D4D4D4"
+    android:orientation="vertical"
+    tools:context="easyway.Mobile.DangerousGoods.AlreadySubmitFormActivity">
+
+    <include layout="@layout/title_bar" />
+
+    <ListView
+        android:id="@+id/listView_already_submit_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

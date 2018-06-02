@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/live_case_view"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#D4D4D4"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/Top"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <include layout="@layout/title_bar" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/childtasklist"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/Bottom"
+        android:layout_below="@id/Top"
+        android:layout_gravity="center"
+        android:cacheColorHint="#00000000"
+        android:divider="@color/gray"
+        android:dividerHeight="1dip"
+        android:fadingEdge="none" />
+
+    <LinearLayout
+        android:id="@+id/Bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom|center"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_footer"
+        android:gravity="center" >
+
+        <Button
+            android:id="@+id/btnPreview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/btn_m_selector"
+            android:text="@string/task_add_preview"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/btn_m_selector"
+            android:text="@string/task_save"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+        
+        <Button
+            android:id="@+id/btnPulish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/btn_m_selector"
+            android:text="@string/task_add_publish"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</RelativeLayout>

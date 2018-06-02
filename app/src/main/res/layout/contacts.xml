@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D4D4D4"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <include layout="@layout/title_bar" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#A4A4A4"
+        android:orientation="vertical"
+        android:paddingBottom="5dp"
+        android:paddingTop="2dp" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/rounded_edittext" >
+
+            <AutoCompleteTextView
+                android:id="@+id/edtSearch"
+                android:layout_width="fill_parent"
+                android:layout_height="36dp"
+                android:layout_toLeftOf="@+id/imgDel"
+                android:background="@null"
+                android:ems="10"
+                android:hint="@string/search"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:singleLine="true" >
+
+                <requestFocus />
+            </AutoCompleteTextView>
+
+            <ImageView
+                android:id="@+id/imgDel"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/deletemessage" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LayoutAll"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/txtMenu"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#B4B4B4"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <ListView
+            android:id="@+id/lstContacts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-1dp"
+            android:cacheColorHint="#00000000"
+            android:divider="#C4C4C4"
+            android:dividerHeight="1dip"
+            android:footerDividersEnabled="false"
+            android:headerDividersEnabled="false" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LayoutOnline"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/txtOnlinesMenu"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#B4B4B4"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:singleLine="true"
+            android:text="@string/searchresult"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <ListView
+            android:id="@+id/lstOnlines"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-1dp"
+            android:cacheColorHint="#00000000"
+            android:divider="#C4C4C4"
+            android:dividerHeight="1dip"
+            android:footerDividersEnabled="false"
+            android:headerDividersEnabled="false" />
+    </LinearLayout>
+
+</LinearLayout>

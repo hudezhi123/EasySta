@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 提醒 -->
+    <string name="Caution_Title">记事本</string>
+    <string name="Sell_Ticket_Log">售票日志</string>
+    <string name="Caution_Save">保存</string>
+    <string name="Caution_Valid">启用</string>
+    <string name="Caution_Add">添加</string>
+    <string name="New_sell_ticket_build">新建</string>
+    <string name="Caution_Edit">编辑</string>
+    <string name="Caution_Delete">删除</string>
+    <string name="Caution_Level">优先级:</string>
+    <string name="Caution_Record">录音</string>
+    <string name="Caution_TakePhoto">拍照</string>
+    <string name="Caution_InputTilte">请输入标题</string>
+    <string name="Caution_InputContent">请输入内容</string>
+    <string name="Caution_InputLevelHigh">高</string>
+    <string name="Caution_InputLevelNormal">中</string>
+    <string name="Caution_InputLevelLow">低</string>
+    <string name="Caution_InputDate">日期</string>
+    <string name="Caution_InputTime">时间</string>
+    <string name="Caution_DetailTitle">标&#160;&#160;&#160;&#160;题:</string>
+    <string name="Caution_DetailContent">内&#160;&#160;&#160;&#160;容:</string>
+    <string name="Caution_DetailLevel">优先级:</string>
+    <string name="Caution_DetailTime">时&#160;&#160;&#160;&#160;间:</string>
+    <string name="Caution_DetailAttach">附&#160;&#160;&#160;&#160;件:</string>
+
+</resources>

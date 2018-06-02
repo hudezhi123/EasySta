@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+    
+    <TextView 
+        android:id="@+id/DFNumber"
+        style="@style/mTextOne"
+        android:layout_width="0dp"
+        android:layout_weight="3"
+        android:layout_height="fill_parent"
+        android:textSize="14sp"
+        />
+    
+    <ImageView 
+        android:layout_width="1dp"
+        android:layout_height="fill_parent"
+        android:background="@color/black"
+        />
+    
+    <TextView 
+        android:id="@+id/DFName"
+        style="@style/mTextOne"
+        android:layout_width="0dp"
+        android:layout_weight="2"
+        android:layout_height="fill_parent"
+        android:textSize="14sp"
+        />
+    
+    <ImageView 
+        android:layout_width="1dp"
+        android:layout_height="fill_parent"
+        android:background="@color/black"
+        />
+    
+    <LinearLayout 
+        android:layout_width="0dp"
+        android:layout_weight="5"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal"
+        >
+        
+        <Button 
+            android:id="@+id/DFLook"
+            style="@style/mButtonOne"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="fill_parent"
+            android:text="查看"
+            />
+        	<ImageView android:layout_width="10dp" android:layout_height="fill_parent"/>
+        <Button 
+            android:id="@+id/DFDelete"
+            style="@style/mButtonOne"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="fill_parent"
+            android:text="删除"
+            />
+    </LinearLayout>
+    
+ </LinearLayout>
+</FrameLayout>

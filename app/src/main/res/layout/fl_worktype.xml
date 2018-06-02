@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/tv_shangshui"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="上水"
+        android:textColor="#000000"
+        android:gravity="center"
+        android:padding="20dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:background="#f2f2f2"/>
+
+    <TextView
+        android:id="@+id/tv_zhantai"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="站台"
+        android:textColor="#000000"
+        android:gravity="center"
+        android:padding="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:background="#f2f2f2"/>
+
+    <TextView
+        android:id="@+id/tv_houcheting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="候车厅"
+        android:textColor="#000000"
+        android:gravity="center"
+        android:padding="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:background="#f2f2f2"/>
+
+    <TextView
+        android:id="@+id/tv_jianpiao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="检票"
+        android:textColor="#000000"
+        android:gravity="center"
+        android:padding="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:background="#f2f2f2"/>
+
+    <TextView
+        android:id="@+id/tv_chuzhankou"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="出站口"
+        android:textColor="#000000"
+        android:gravity="center"
+        android:padding="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:background="#f2f2f2"/>
+
+
+
+</LinearLayout>

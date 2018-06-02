@@ -1,0 +1,733 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="easyway.Mobile"
+    android:installLocation="auto"
+    android:versionCode="123"
+    android:versionName="1.6.1">
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:sharedUserId="android.uid.system"
+        android:targetSdkVersion="23" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.RECORD_VIDEO" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <!-- <uses-permission android:name="android.permission.CALL_PRIVILEGED" /> -->
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="com.android.browser.permission.READ_HISTORY_BOOKMARKS" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.RESTART_PACKAGES" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.NFC" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.DELETE_PACKAGES" />
+
+    <!-- add iBeacon Must Import permission -->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.usb.host" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.flash"
+        android:required="false" />
+    <uses-feature android:name="android.hardware.screen.landscape" />
+    <uses-feature
+        android:name="android.hardware.wifi"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.touchscreen"
+        android:required="false" />
+
+    <application
+        android:name=".Application.MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:theme="@android:style/Theme.NoTitleBar">
+        <receiver android:name=".BootReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+
+                <category android:name="android.intent.category.HOME" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".receiver.AlarmReceiver" />
+
+        <!-- 登录 -->
+        <activity
+            android:name=".Login.LoginFrame"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Login.Configuration"
+            android:label="@string/configuration"
+            android:noHistory="true"
+            android:screenOrientation="portrait" />
+
+        <!-- 主界面 -->
+        <activity
+            android:name=".MainFramework"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+
+        <!-- 到发通告 -->
+        <activity
+            android:name=".TrainAD.TrainADSchedule"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".TrainAD.TrainADTabActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".TrainAD.TrainADAllActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".TrainAD.TrainADLastActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".TrainAD.TrainADOriginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".TrainAD.TrainADTerminalActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".TrainAD.TrainADVIAActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 股道占用 -->
+        <activity
+            android:name=".TrainTrack.UnitRoadEncroachment"
+            android:screenOrientation="portrait" />
+        <!-- 股道占用详细信息 -->
+        <activity
+            android:name=".TrainTrackDetail.UnitRoadEncroachmentDetail"
+            android:screenOrientation="portrait" />
+
+        <!-- 情况上报 -->
+        <activity
+            android:name=".LiveCase.LiveCase"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".LiveCase.LiveCaseList"
+            android:screenOrientation="portrait" />
+
+        <!-- 设备报障 -->
+        <activity
+            android:name=".DevFault.DFList"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".DevFault.DFReport"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <!-- android:configChanges="orientation|keyboardHidden" -->
+        <activity
+            android:name=".DevFault.SparesActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".DevFault.NFCDevicesInfo"
+            android:screenOrientation="portrait" />
+
+        <!-- 附件 -->
+        <activity
+            android:name=".Attach.AttachList"
+            android:screenOrientation="portrait" />
+
+        <!-- 广播 -->
+        <activity
+            android:name=".Broadcast.ManualBroad"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Broadcast.BroadcastSubject"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Broadcast.SpecSubjectList"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Broadcast.ViewPlayRecord"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Broadcast.BroadcastManualAddActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Broadcast.BroadcastTabActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 交接班 -->
+        <activity
+            android:name=".Shift.Shift_Out"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Shift.Shift_Out2"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Shift.Shift_In_Train"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Shift.Shift_Out_Remark"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Shift.Shift_In_Remark"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Shift.Shift_In_SignIn"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Shift.Shift_In"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Shift.Shift_In_Pool"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Shift.Shift_In_Show_Team_Train_Task"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Shift.ShiftOut_Task_List"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ShiftAdd.EquipmentDetail"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Shift.Shift_Out_Watering"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Shift.ShiftInDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Shift.MyShiftInOutActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Shift.Shift_Out_SetDetail"
+            android:screenOrientation="portrait" />
+
+        <!-- 待办工作 -->
+        <activity
+            android:name=".Task.TaskTabActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Task.TaskReviewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Task.TaskOpeningActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Task.TaskEmphasisActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Task.TaskCompleteActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Task.TaskTodoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Task.RelatedTaskList"
+            android:screenOrientation="portrait" />
+
+        <!-- NFC -->
+        <activity
+            android:name=".NFCViewer"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.nfc.action.NDEF_DISCOVERED" />
+
+                <data android:mimeType="text/plain" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.nfc.action.TAG_DISCOVERED" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- 短消息 -->
+        <activity
+            android:name=".Message.MessageList"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Message.DeleteMessage"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Message.MessageView"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Message.MessageChat"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Message.SelectContact"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Message.MessageImageView"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Message.CommonMessage"
+            android:screenOrientation="portrait"
+            android:theme="@style/myDialogTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- 现场监控 -->
+        <activity
+            android:name=".site_monitoring.SMTabActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".site_monitoring.SMChildCatgOneActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".site_monitoring.SMChildCatgTwoActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".site_monitoring.TeamsActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".site_monitoring.TaskDetailActivity"
+            android:label="@string/task_detail"
+            android:noHistory="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Dialog">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".site_monitoring.UnDutyTipsActivity"
+            android:label="@string/Notify"
+            android:noHistory="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Dialog">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".site_monitoring.SMExceptionTaskActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- 重点任务 -->
+        <activity
+            android:name=".PointTask.PTListActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".PointTask.PTChildListActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".PointTask.PTDraftChildListActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".PointTask.PTAddActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".PointTask.PTAddListActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".PointTask.PTAddChildActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".PointTask.PTTrainTypeDialogActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/myDialogTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- 联系人 -->
+        <activity
+            android:name=".Contacts.Contacts"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Contacts.ContactDetail"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+
+        <!-- 设置 -->
+        <activity
+            android:name=".Config.Config"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Config.ChangePsw"
+            android:label="@string/changepassword"
+            android:noHistory="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Dialog">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- 站内时刻表 -->
+        <activity
+            android:name=".StationSchedule.StationSchedule"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".StationSchedule.TrainSchedule"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Dialog" />
+
+        <!-- 车辆查询 -->
+        <activity
+            android:name=".TrainSearch.TSTabActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".TrainSearch.TSTrainNoActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".TrainSearch.TSResultActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".TrainSearch.TSStationActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 图形报表 -->
+        <activity
+            android:name=".ReportChart.ReportsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ReportChart.ChartLineActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".ReportChart.ChartPieActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".ReportChart.ChartBarActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".ReportChart.DataLineActivity"
+            android:screenOrientation="landscape" />
+
+        <!-- 交接班 new -->
+        <activity
+            android:name=".ShiftNew.ShiftTabActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ShiftNew.ShiftTaskActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ShiftNew.ShiftAttendanceActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 文档 -->
+        <activity
+            android:name=".SiteRules.SRTabActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SiteRules.SRLocalActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SiteRules.SRNetActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="org.vudroid.pdfdroid.PdfViewerActivity"
+            android:configChanges="orientation|keyboardHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:mimeType="application/pdf" />
+            </intent-filter>
+        </activity>
+
+        <!-- 客运巡检 -->
+        <activity
+            android:name=".Patrol.PatrolActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Patrol.PatrolBrowseActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 记事本 -->
+        <activity
+            android:name=".Caution.CautionListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Caution.CautionDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Caution.CautionEditActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 上水管理 -->
+        <activity
+            android:name=".Watering.WateringTabActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Watering.WateringProcessingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Watering.WateringCompletedActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 请假申请 -->
+        <activity
+            android:name=".VacationApply.VacationApplyListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".VacationApply.VacationApplyActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".VacationApply.VacationViewActivity"
+            android:screenOrientation="portrait" />
+        <!-- 请假审批 -->
+        <activity
+            android:name=".VacationAudit.VacationAuditListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".VacationAudit.VacationAuditActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <!-- 照明控制 -->
+        <activity
+            android:name=".LightingControl.LightingControlActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".LightingControl.LightingControlCustumActivity"
+            android:screenOrientation="portrait" />
+        <!-- 锁屏界面弹窗 -->
+        <activity
+            android:name=".LockScreenShow.ShowMessage"
+            android:excludeFromRecents="true"
+            android:launchMode="singleInstance"
+            android:taskAffinity=""
+            android:theme="@android:style/Theme.Wallpaper.NoTitleBar" />
+        <!-- 新的接班页面 -->
+        <activity
+            android:name=".Shift.ShiftInHomeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Shift.New_Shift_In"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Shift.New_Shift_In_Info"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Shift.AddStaff"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Shift.Carryout"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".DevFault.TaskDevUnusual"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Shift.GetAllOpeningTaskActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".DevFault.DRHandlerActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ShiftAdd.WarningQuery"
+            android:screenOrientation="portrait" />
+        <activity android:name=".DevFault.DRHarmPartStorageActivity" />
+        <activity android:name=".DevFault.DeviceRepairLog" />
+
+        <service android:name=".util.WIFiServer" />
+
+        <!-- Polling Service -->
+        <service android:name=".util.PollingService">
+            <intent-filter>
+                <action android:name=".util.PollingService" />
+            </intent-filter>
+        </service>
+        <service android:name=".ActiveStatusService" />
+        <!-- add iBeacon Must Import permission -->
+        <!-- <service android:name="com.sensoro.beacon.kit.BeaconProcessService"/> -->
+        <!-- <service android:name="com.sensoro.beacon.kit.BeaconService"/> -->
+        <!-- <service android:name="com.sensoro.beacon.kit.IntentProcessorService"/> -->
+        <activity android:name=".Task.SecureTipsInfoActivity" />
+        <activity
+            android:name=".Task.TaskOpeningActivity_2"
+            android:screenOrientation="portrait" />
+        <activity android:name=".DevFault.TaskExtractSwageActivity" />
+        <activity android:name=".SiteRules.NewSRNetActivity" />
+        <activity android:name=".SiteRules.ImageShowActivity" />
+
+        <!--<receiver-->
+        <!--android:name=".X_Chat.X_Chat_Is_Start_Receiver"-->
+        <!--android:exported="true">-->
+        <!--<intent-filter>-->
+        <!--<action android:name="easyway.Mobile.x_chat_is_start_receiver" />-->
+        <!--</intent-filter>-->
+        <!--</receiver>-->
+
+        <activity
+            android:name=".DangerousGoods.DangerousFormActivity"
+            android:launchMode="singleTop" />
+        <activity android:name=".DangerousGoods.AlreadySubmitFormActivity" />
+        <activity android:name=".DangerousGoods.DangerousTableActivity" />
+        <activity android:name=".DevFault.SYBDRHandlerActivity" />
+        <activity android:name=".SellTicktLog.SellLogListActivity" />
+        <activity
+            android:name=".SellTicktLog.SellTicketLogBuildActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PassengerTrafficLog.LogDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PassengerTrafficLog.LogListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PassengerTrafficLog.EditLogActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".DefaultReportToRepair.DevReportToRepairActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".DefaultReportToRepair.DevReportListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".DefaultReportToRepair.RepairPicActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".TestActivity" />
+        <activity
+            android:name=".PatrolTask.PatrolTaskActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PatrolTask.UndoPatrolTaskActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".PatrolTask.PatrolTaskActivity2" />
+        <activity
+            android:name=".DevFault.DeviceFaultActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".DevFault.DeviceFaultReportActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".DevFault.DeviceFaultListActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".PassengerTrafficLog.NewEditLogActivity"></activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 客运巡检 -->
+    <string name="Patrol_Title">客运巡检</string>
+    <string name="Patrol_Checking">正在上报巡检</string>
+    <string name="Patrol_CheckSucc">巡检成功</string>
+    <string name="Patrol_CheckFail">巡检失败</string>
+    <string name="Patrol_date_previous">前一天</string>
+    <string name="Patrol_date_next">后一天</string>
+    <string name="Patrol_Sche_outtime">过期</string>
+    <string name="Patrol_Sche_nostarttime">未到开始时间</string>
+    <string name="Patrol_Sche_nostart">未巡检</string>
+    <string name="Patrol_Sche_percentcomplete">部分完成</string>
+    <string name="Patrol_Sche_complete">完成</string>
+</resources>

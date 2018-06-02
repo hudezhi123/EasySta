@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9"
+        android:orientation="vertical"
+        >
+    <easyway.Mobile.util.PullRefreshListView
+            android:id="@+id/mlistView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#D4D4D4"
+            android:cacheColorHint="#00000000"
+            android:divider="@color/gray"
+            android:dividerHeight="1dip"
+            android:fadingEdge="none" />
+	</LinearLayout>
+	
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        >
+        
+        <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            
+            <Button 
+                android:id="@+id/TextRemarks"
+                style="@style/mButtonOne"
+                android:textSize="13sp"
+                android:text="文字备注"
+                />
+            
+            <Button 
+                android:id="@+id/VoiceRemarks"
+                style="@style/mButtonOne"
+                android:textSize="13sp"
+                android:text="语音备注"
+                />
+            
+            <Button 
+                android:id="@+id/DetailRemarks"
+                style="@style/mButtonOne"
+                android:textSize="13sp"
+                android:text="查看交班明细"
+                />
+            
+            <Button 
+                android:id="@+id/Complete"
+                style="@style/mButtonOne"
+                android:layout_width="fill_parent"
+                android:textSize="13sp"
+                android:text="交班"
+                />
+            
+        </LinearLayout>
+        
+    </LinearLayout>
+    
+</LinearLayout>

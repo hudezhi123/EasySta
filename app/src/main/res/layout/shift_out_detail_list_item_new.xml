@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <RelativeLayout
+        android:id="@+id/rl_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/ll_lev1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="车次号："
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/train_number"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="车次号"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/chkTrainNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="5dip"
+            android:visibility="gone"
+            android:src="@drawable/checkbox_normal"
+             />
+
+
+        <LinearLayout
+            android:id="@+id/ll_lev2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll_lev1"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="计划时间:"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/plan_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="计划时间"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_lev3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll_lev2"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="计划结束:"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/plan_end"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="计划结束"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_lev4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll_lev3"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="实际开始:"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/act_start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="实际开始"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_lev5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll_lev4"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="区域:"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/area"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="区域"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_lev6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll_lev5"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="执行部门:"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/exe_arm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="执行部门"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_lev7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll_lev6"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="执行员工:"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/exe_staff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="执行员工"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_lev8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll_lev7"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="任务状态:"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/task_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="任务状态"
+                android:textColor="@color/black" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ll_lev9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll_lev8"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="描述:"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/remark_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="描述"
+                android:textColor="@color/black" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ll_lev10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll_lev9"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="语音:"
+                android:textColor="@color/black" />
+
+            <Button 
+                android:id="@+id/remark_voice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="语音播放"
+                android:textColor="@color/black" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_delet"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            
+            android:text="删除"
+            android:textColor="@color/black" />
+
+    </LinearLayout>
+
+</LinearLayout>

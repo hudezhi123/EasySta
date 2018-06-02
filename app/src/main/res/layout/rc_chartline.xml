@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#D4D4D4" 
+    android:baselineAligned="false"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="0dip"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/txtTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:id="@+id/chart"
+            android:orientation="horizontal" 
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent" >
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lineBtn"
+        android:layout_width="40dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/btnResize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rcresize" />
+
+        <Button
+            android:id="@+id/btnData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rcdata" />
+
+        <Button
+            android:id="@+id/btnNextS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rcnextserise" />
+
+        <Button
+            android:id="@+id/btnNextP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rcnextpoint" />
+    </LinearLayout>
+
+</LinearLayout>

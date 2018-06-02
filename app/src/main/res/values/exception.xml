@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 网络异常 -->
+    <string name="exp_notconnect">网络未连接，请先连接网络</string>
+    <string name="exp_connect">连接服务器异常，请确认您的网络及服务器地址设置是否正常</string>
+    <string name="exp_connecttimeout">网络不给力，请检查您的网络状况</string>
+    <string name="exp_readtimeout">网络不给力，请检查您的网络状况</string>
+    <string name="exp_interface">服务器接口异常</string>
+    <string name="exp_connectservice">连接服务器异常</string>
+
+    <!-- 版本升级 -->
+    <string name="exp_checkupdate">版本检测失败，请稍后再试</string>
+    <string name="exp_update">下载新版本失败，请稍后再试</string>
+
+
+    <string name="exp_internal">服务器内部出错</string>
+    <string name="exp_params">参数异常</string>
+    <string name="exp_download">下载文件失败</string>
+    <string name="exp_open">文件格式不支持,无法打开</string>
+    <string name="exp_not_file">不是文件</string>
+    <string name="exp_capture_image">录像异常</string>
+    <string name="exp_livecase">情况上报失败</string>
+    <string name="exp_devfault">设备故障上报失败</string>
+    <string name="exp_play_voice">播放语音异常</string>
+    <string name="exp_r2r">故障上报失败</string>
+    <string name="exp_getonlineuser">获取在线用户列表失败</string>
+    <string name="exp_data_sync">数据同步失败，请重新尝试</string>
+
+    <string name="exp_permission">获取用户权限失败，请重新登录</string>
+    <string name="exp_getmsg">获取未读短消息失败</string>
+    <string name="exp_getparam">获取参数失败，请稍后再试</string>
+    <string name="exp_getdata">获取数据失败，请稍后再试</string>
+    <string name="exp_getteamheader">获取执行组在线组员信息失败，请稍后再试</string>
+    <string name="exp_updatepointtaskstate">更新重点任务状态失败，请稍后再试</string>
+    <string name="exp_addpointtask">添加重点任务失败</string>
+    <string name="exp_updatetaskstate">任务状态更新失败，请稍后再试</string>
+    <string name="exp_getdutystaff">获取值班人员信息失败，请稍后再试</string>
+    <string name="exp_onduty">人员到岗设置失败，请稍后再试</string>
+
+    <string name="exp_getteammanager">获取小组负责人信息失败，请稍后再试</string>
+    <string name="exp_gettasksigninfo">获取任务签到信息失败，请稍后再试</string>
+    <string name="exp_sendmsg">消息发送失败，请稍后再试</string>
+
+    <!-- Login -->
+    <string name="exp_usernameempty">账号不能为空</string>
+    <string name="exp_passwrodempty">密码不能为空</string>
+    <string name="exp_login">登录失败</string>
+    <string name="exp_notlogin">请先登录客运通客户端</string>
+
+    <!-- NFC -->
+    <string name="exp_nfccontent">非法NFC标签，请再次确认</string>
+    <string name="exp_nfc_task">非法巡检任务，请再次确认</string>
+
+    <!-- UploadAttach -->
+    <string name="exp_attachnotexist">附件不存在</string>
+    <string name="exp_attach_num_error">只能上传一个附件</string>
+
+    <!-- DevFault -->
+    <string name="exp_devfault_message_empty">故障描述不能为空</string>
+
+    <!-- Schedule -->
+    <string name="exp_get_origin">获取始发时刻表失败，请稍后再试</string>
+    <string name="exp_get_terminal">获取终到时刻表失败，请稍后再试</string>
+    <string name="exp_get_station">获取乘务担当信息失败，请稍后再试</string>
+    <string name="exp_get_traintype">获取车型信息失败，请稍后再试</string>
+    <string name="exp_origin_null">始发时刻表为空，请稍后再试</string>
+    <string name="exp_terminal_null">终到时刻表为空，请稍后再试</string>
+    <string name="exp_station_null">乘务担当信息为空，请稍后再试</string>
+    <string name="exp_traintype_null">车型信息为空，请稍后再试</string>
+
+    <!-- TrainSearch -->
+    <string name="exp_tstrainno_null">请输入车次号</string>
+    <string name="exp_tsstation_null">请输入出发地</string>
+    <string name="exp_arstation_null">请输入目的地</string>
+    <string name="exp_tssearchrestlt_null">车次不存在</string>
+    <string name="exp_tsresultnull">无满足条件的车次</string>
+    <string name="exp_nullstation">无满足条件的车站</string>
+    <string name="exp_tssearch">检索发生异常，请稍后再试</string>
+</resources>

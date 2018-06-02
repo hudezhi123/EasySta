@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+     >
+    
+     
+        
+	<LinearLayout 
+	    android:id="@+id/local_scereen"
+	    android:layout_width="230dp"
+	    android:layout_height="271dp"
+	    android:orientation="vertical"
+	    android:gravity="center"
+	    android:background="@color/white"
+	    >
+	    
+	    <TextView
+	        android:id="@+id/local_scereen_title"
+			android:layout_width="match_parent"
+			android:layout_height="60dp"
+			android:text="待办工作"
+			android:gravity="center"
+			android:textColor="@color/black"
+			android:textSize="16dp"	        
+	        />
+	    <ImageView 
+	        android:layout_width="match_parent"
+	        android:layout_height="1dp"
+	        android:background="@color/gray"
+	        />
+
+	    <TextView
+	        android:id="@+id/local_scereen_mes"
+	        android:layout_width="match_parent"
+	        android:layout_height="200dp"
+	        android:layout_marginLeft="3dp"
+	        android:layout_marginTop="3dp"
+	        android:paddingLeft="3dp"
+	        android:paddingTop="3dp"
+	        android:text="@string/lock_screen_show_message_mes"
+	        android:textColor="@color/black"
+	        android:textSize="18dp" />
+	    
+	    </LinearLayout>
+    
+	<LinearLayout
+	    android:id="@+id/local_scereen_lin" 
+	    android:layout_width="230dp"
+	    android:layout_height="35dp"
+	    android:orientation="vertical"
+	    android:gravity="center"
+	    android:background="@color/white"
+	    >
+	    
+	    <TextView
+	        android:id="@+id/local_scereen_ok"
+	        android:layout_height="35dp"
+	        android:layout_width="match_parent"
+	        android:gravity="center"
+	        android:text="已读"
+	        android:textColor="@color/black"
+	        android:background="@color/gray"
+	        />
+	    
+	</LinearLayout>
+	
+</LinearLayout>

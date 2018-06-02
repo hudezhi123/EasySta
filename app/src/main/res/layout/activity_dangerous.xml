@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_dangerous"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D4D4D4"
+    android:orientation="vertical"
+    tools:context="easyway.Mobile.DangerousGoods.DangerousFormActivity">
+
+    <include layout="@layout/title_bar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingRight="2dp">
+
+            <LinearLayout style="@style/DangerousLinear">
+
+                <TextView
+                    style="@style/DangerousTextTag"
+                    android:text="班组" />
+
+                <Spinner
+                    android:id="@+id/spinner_group_name_danger"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="1dp"
+                    android:entries="@array/group_danger" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/DangerousLinear">
+
+                <TextView
+                    style="@style/DangerousTextTag"
+                    android:text="日期时间" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="1.5dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btn_date_danger"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="2012-03-23" />
+
+                    <Button
+                        android:id="@+id/btn_time_danger"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="11:24" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout style="@style/DangerousLinear">
+
+                <TextView
+                    style="@style/DangerousTextTag"
+                    android:text="危险品携带人姓名" />
+
+                <EditText
+                    android:id="@+id/edit_carrier_danger"
+                    style="@style/DangerousEdit" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/DangerousLinear">
+
+                <TextView
+                    style="@style/DangerousTextTag"
+                    android:text="性别" />
+
+                <RadioGroup
+                    android:id="@+id/radiogroup_sex_danger"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dp">
+
+                    <RadioButton
+                        android:id="@+id/radio_sex_male_danger"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:text="男"
+                        android:textColor="@color/black" />
+
+                    <RadioButton
+                        android:id="@+id/radio_sex_female_danger"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="女"
+                        android:textColor="@color/black" />
+
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout style="@style/DangerousLinear">
+
+                <TextView
+                    style="@style/DangerousTextTag"
+                    android:text="联系电话" />
+
+                <EditText
+                    android:id="@+id/edit_connect_method_danger"
+                    style="@style/DangerousEdit"
+                    android:inputType="phone" />
+            </LinearLayout>
+
+
+            <LinearLayout style="@style/DangerousLinear">
+
+                <TextView
+                    style="@style/DangerousTextTag"
+                    android:text="乘坐车次" />
+
+                <EditText
+                    android:id="@+id/edit_train_no_danger"
+                    style="@style/DangerousEdit" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/DangerousLinear">
+
+                <TextView
+                    style="@style/DangerousTextTag"
+                    android:text="票号" />
+
+                <EditText
+                    android:id="@+id/edit_ticket_no_danger"
+                    style="@style/DangerousEdit" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/DangerousLinear">
+
+                <TextView
+                    style="@style/DangerousTextTag"
+                    android:text="家庭地址" />
+
+                <EditText
+                    android:id="@+id/edit_address_danger"
+                    style="@style/DangerousEdit" />
+            </LinearLayout>
+
+
+            <LinearLayout style="@style/DangerousLinear">
+
+                <TextView
+                    style="@style/DangerousTextTag"
+                    android:text="危险品品名" />
+
+                <Spinner
+                    android:id="@+id/spinner_cate_name_danger"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="1dp"
+                    android:entries="@array/cate_name" />
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/DangerousLinear">
+
+                <TextView
+                    style="@style/DangerousTextTag"
+                    android:text="描述" />
+
+                <EditText
+                    android:id="@+id/edit_identity_describ_danger"
+                    style="@style/DangerousEdit" />
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/DangerousLinear">
+
+                <TextView
+                    style="@style/DangerousTextTag"
+                    android:text="数量" />
+
+
+                <EditText
+                    android:id="@+id/edit_count_danger"
+                    style="@style/DangerousEdit"
+                    android:inputType="numberDecimal" />
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/DangerousLinear">
+
+                <TextView
+                    style="@style/DangerousTextTag"
+
+                    android:text="质量" />
+
+                <EditText
+                    android:id="@+id/edit_quality_danger"
+                    style="@style/DangerousEdit"
+                    android:inputType="numberDecimal" />
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/DangerousLinear">
+
+                <TextView
+                    style="@style/DangerousTextTag"
+                    android:text="查获人姓名" />
+
+                <EditText
+                    android:id="@+id/edit_catcher_name_danger"
+                    style="@style/DangerousEdit" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/DangerousLinear">
+
+                <TextView
+                    style="@style/DangerousTextTag"
+                    android:text="岗位" />
+
+                <Spinner
+                    android:id="@+id/spinner_position_name_danger"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="1dp"
+                    android:entries="@array/position_name" />
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/DangerousLinear">
+
+                <TextView
+                    style="@style/DangerousTextTag"
+                    android:text="物品去向" />
+
+                <Spinner
+                    android:id="@+id/spinner_where_to_go_name_danger"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="1dp"
+                    android:entries="@array/where_to_go" />
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/DangerousLinear">
+
+                <TextView
+                    style="@style/DangerousTextTag"
+                    android:text="经办人" />
+
+                <EditText
+                    android:id="@+id/edit_dealt_people_danger"
+                    style="@style/DangerousEdit" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@drawable/danger_linear_shape"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/DangerousTextTag"
+                    android:text="备注" />
+
+                <EditText
+                    android:id="@+id/edit_addition_danger"
+                    style="@style/DangerousEdit"
+                    android:lines="3"
+                    android:maxLines="4" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/pic_choose_linear_shape"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="1dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:gravity="left"
+                    android:orientation="horizontal">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recycler_pic_listview"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/ic_btn_title_background"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/btn_submit_danger"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_selector"
+                    android:gravity="center"
+                    android:text="提交" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

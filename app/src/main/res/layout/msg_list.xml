@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#D4D4D4"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <include layout="@layout/title_bar" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/mlLayoutContent"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.74"
+        android:orientation="vertical" >
+
+        <ExpandableListView
+            android:id="@+id/mlExpandableListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_list" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/mlfootlayout"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:background="@drawable/bg_footer"
+        android:gravity="center" >
+
+        <Button
+            android:id="@+id/mlButtonDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_selector"
+            android:text="删除"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/mlButtonNew"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/mlButtonDelete"
+            android:background="@drawable/btn_selector"
+            android:text="新增"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+</LinearLayout>

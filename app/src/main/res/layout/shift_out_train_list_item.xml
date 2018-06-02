@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_View"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#D4D4D4"
+    android:minHeight="50dp" >
+
+    <ImageView
+        android:id="@+id/chkTrainNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dip"
+        android:src="@drawable/checkbox_normal" />
+
+    <TextView
+        android:id="@+id/labTrainNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/chkTrainNum"
+        android:gravity="center"
+        android:text="G7308"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btnRemarks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/btn_selector"
+        android:text="@string/Shift_Out_Info" />
+
+</RelativeLayout>

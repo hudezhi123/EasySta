@@ -1,0 +1,35 @@
+SX
+*.DS_Store
+
+
+#Gradle files
+build/
+.gradle/*
+.gradle/
+build/intermediates/dex-cache/cache.xml
+*/build/
+
+#IDEA
+*.iml
+.idea/.name
+.idea/compiler.xml
+.idea/misc.xml
+.idea/modules.xml
+.idea/libraries/*
+.idea/*
+.idea/
+.swp
+ .idea/workspace.xml
+ /local.properties
+
+*.iml
+.gradle
+/local.properties
+/.idea/workspace.xml
+/.idea/libraries
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+
+

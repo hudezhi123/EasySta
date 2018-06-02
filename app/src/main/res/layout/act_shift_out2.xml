@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+    
+	<LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <include layout="@layout/title_bar" />
+    </LinearLayout>
+    
+	<LinearLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:orientation="horizontal"
+	    >
+	    
+	    <LinearLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical"
+	    android:gravity="center_horizontal"
+	    android:layout_gravity="center_vertical"
+	    >
+	    
+		<Button 
+	    android:id="@+id/Water"
+	    android:layout_width="150dp"
+	    android:layout_height="50dp"
+	    android:text="上水任务"
+	    android:textColor="@color/black"
+	    android:textSize="20sp"
+	    android:gravity="center"
+	    android:layout_marginTop="10dp"
+	    android:layout_marginBottom="10dp"
+	    android:onClick="WaterTask"
+	    />
+		
+		<Button 
+	    android:id="@+id/Platform"
+	    android:layout_width="150dp"
+	    android:layout_height="50dp"
+	    android:text="站台任务"
+	    android:textColor="@color/black"
+	    android:textSize="20sp"
+	    android:gravity="center"
+	    android:layout_marginBottom="10dp"
+	    android:onClick="PlatformTask"
+	    />
+		
+		<Button 
+	    android:id="@+id/Waiting"
+	    android:layout_width="150dp"
+	    android:layout_height="50dp"
+	    android:text="候车厅任务"
+	    android:textColor="@color/black"
+	    android:textSize="20sp"
+	    android:gravity="center"
+	    android:layout_marginBottom="10dp"
+	    android:onClick="WaitingTask"
+	    />
+		
+		<Button 
+	    android:id="@+id/Check"
+	    android:layout_width="150dp"
+	    android:layout_height="50dp"
+	    android:text="检票任务"
+	    android:textColor="@color/black"
+	    android:textSize="20sp"
+	    android:gravity="center"
+	    android:layout_marginBottom="10dp"
+	    android:onClick="CheckTask"
+	    />
+		
+		<Button 
+	    android:id="@+id/Exit"
+	    android:layout_width="150dp"
+	    android:layout_height="50dp"
+	    android:text="出站口任务"
+	    android:textColor="@color/black"
+	    android:textSize="20sp"
+	    android:gravity="center"
+	    android:layout_marginBottom="10dp"
+	    android:onClick="ExitTask"
+	    />	    
+	    
+	</LinearLayout>
+	    
+	</LinearLayout>
+	
+</LinearLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 情况上报 -->
+    <string name="lc_sel_type">选择上报类型</string>
+    <string name="lc_audio">录音</string>
+    <string name="lc_photo">拍照</string>
+    <string name="lc_video">视频</string>
+    <string name="lc_type">上报类型:</string>
+    <string name="lc_level">上报级别:</string>
+    <string name="lc_report_date">上报时间:</string>
+    <string name="lc_reporter">上&#160;&#160;报&#160;&#160;人:</string>
+    <string name="lc_remark">备&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;注:</string>
+    <string name="lc_location">位&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;置:</string>
+    <string name="lc_confirm_status">确认状态:</string>
+    <string name="lc_content_hint">点击输入上报内容</string>
+    <string name="lc_posting">正在上报</string>
+    <string name="live_case_post_success">现场问题上报成功</string>
+
+</resources>

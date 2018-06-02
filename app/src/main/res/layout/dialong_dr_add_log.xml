@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <LinearLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="40dp"
+	    android:gravity="center_vertical"
+	    android:orientation="horizontal"
+	    >
+	    <LinearLayout 
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            >
+            <TextView
+            style="@style/mTextOne"
+            android:gravity="left"
+            android:text="设备症状描述" />
+            
+        </LinearLayout>
+        
+		<LinearLayout 
+		    android:layout_width="0dp"
+		    android:layout_height="fill_parent"
+		    android:layout_weight="2"
+		    android:orientation="horizontal"
+		    android:gravity="center_vertical"
+		    >
+		    <EditText 
+		        style="@style/mEditTextOne"
+		        android:layout_width="fill_parent"
+		        android:hint="填写维修情况"
+		        />
+		</LinearLayout>
+	</LinearLayout>
+	
+    <LinearLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="40dp"
+	    android:gravity="center_vertical"
+	    android:orientation="horizontal"
+	    >
+	    <LinearLayout 
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            >
+            <TextView
+            style="@style/mTextOne"
+            android:gravity="left"
+            android:text="修理描述" />
+            
+        </LinearLayout>
+        
+		<LinearLayout 
+		    android:layout_width="0dp"
+		    android:layout_height="fill_parent"
+		    android:layout_weight="2"
+		    android:orientation="horizontal"
+		    android:gravity="center_vertical"
+		    >
+		    <EditText 
+		        style="@style/mEditTextOne"
+		        android:layout_width="fill_parent"
+		        android:hint="重新接线"
+		        />
+		</LinearLayout>
+	</LinearLayout>
+	
+</LinearLayout>

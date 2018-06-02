@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <include layout="@layout/title_bar" />
+    </LinearLayout>
+   <LinearLayout 
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:padding="10dp"
+       >
+       <TextView 
+           style="@style/mTextOne"
+           android:text="查询："
+           />
+       <EditText 
+           style="@style/mEditTextOne"
+           android:layout_width="100dp"
+           android:layout_height="40dp"
+           />
+       <Button 
+           style="@style/mTextOne"
+           android:layout_width="100dp"
+           android:layout_height="40dp"
+           android:text="查询"
+           />
+       <Button 
+           style="@style/mTextOne"
+           android:layout_width="100dp"
+           android:layout_height="40dp"
+           android:text="新增"
+           />
+   </LinearLayout>
+   <ListView 
+       android:id="@+id/lv_waring"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:scrollbars="none"
+       android:divider="@color/gray"
+       android:dividerHeight="1dp"
+       android:layout_margin="10dp"
+       android:listSelector="@color/transparent"
+       android:background="@drawable/bg_table"
+       ></ListView>
+   
+</LinearLayout>

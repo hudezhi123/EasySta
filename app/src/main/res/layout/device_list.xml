@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_corner"
+    android:gravity="top"
+    android:orientation="vertical" >
+
+
+        <ListView
+            android:id="@+id/device_List"
+             android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="@drawable/bg_corner"
+            android:cacheColorHint="#00000000"
+            android:divider="@color/gray"
+            android:dividerHeight="1dip"
+            android:fadingEdge="none" 
+            android:padding="10dp"/>
+    
+
+ 
+
+</LinearLayout>

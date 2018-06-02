@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:baselineAligned="false"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/txtCol1"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <easyway.Mobile.ReportChart.RCScrollContainer
+        android:id="@+id/scollContainer"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <easyway.Mobile.ReportChart.RCHScrollView
+            android:id="@+id/RCHScrollView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:id="@+id/LinearContent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+            </LinearLayout>
+        </easyway.Mobile.ReportChart.RCHScrollView>
+    </easyway.Mobile.ReportChart.RCScrollContainer>
+
+</LinearLayout>

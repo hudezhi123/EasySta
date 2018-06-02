@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <LinearLayout 
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            >
+            
+            <TextView
+            style="@style/mTextOne"
+            android:gravity="left"
+            android:text="设备编号" />
+            
+        </LinearLayout>
+        
+		<LinearLayout 
+		    android:layout_width="0dp"
+		    android:layout_height="fill_parent"
+		    android:layout_weight="2"
+		    android:orientation="horizontal"
+		    android:gravity="center_vertical"
+		    >
+		    
+		    <TextView
+            style="@style/mTextOne"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:gravity="left|center_vertical"
+            android:text="XXXDFGFDHSDHDF" />
+        
+        <Button 
+            style="@style/mButtonOne"
+            android:text="选择"
+            />
+		    
+		</LinearLayout>
+        	
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <LinearLayout 
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            >
+            
+            <TextView
+            style="@style/mTextOne"
+            android:gravity="left"
+            android:text="设备名称" />
+            
+        </LinearLayout>
+        
+		<LinearLayout 
+		    android:layout_width="0dp"
+		    android:layout_height="fill_parent"
+		    android:layout_weight="2"
+		    android:orientation="horizontal"
+		    android:gravity="center_vertical"
+		    >
+		    <TextView
+            style="@style/mTextOne"
+            android:layout_width="fill_parent"
+            android:gravity="left|center_vertical"
+            android:text="CZZ165" />
+		</LinearLayout>
+        	
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <LinearLayout 
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            >
+            
+            <TextView
+            style="@style/mTextOne"
+            android:gravity="left"
+            android:text="设备价格" />
+            
+        </LinearLayout>
+        
+		<LinearLayout 
+		    android:layout_width="0dp"
+		    android:layout_height="fill_parent"
+		    android:layout_weight="2"
+		    android:orientation="horizontal"
+		    android:gravity="center_vertical"
+		    >
+		    <TextView
+            style="@style/mTextOne"
+            android:layout_width="fill_parent"
+            android:gravity="left|center_vertical"
+            android:text="123.00" />
+		</LinearLayout>
+        	
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <LinearLayout 
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            >
+            
+            <TextView
+            style="@style/mTextOne"
+            android:gravity="left"
+            android:text="设备组序号" />
+            
+        </LinearLayout>
+        
+		<LinearLayout 
+		    android:layout_width="0dp"
+		    android:layout_height="fill_parent"
+		    android:layout_weight="2"
+		    android:orientation="horizontal"
+		    android:gravity="center_vertical"
+		    >
+		    <TextView
+            style="@style/mTextOne"
+            android:layout_width="fill_parent"
+            android:gravity="left|center_vertical"
+            android:text="1" />
+		</LinearLayout>
+        	
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <LinearLayout 
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            >
+            
+            <TextView
+            style="@style/mTextOne"
+            android:gravity="left"
+            android:text="生产日期" />
+            
+        </LinearLayout>
+        
+		<LinearLayout 
+		    android:layout_width="0dp"
+		    android:layout_height="fill_parent"
+		    android:layout_weight="2"
+		    android:orientation="horizontal"
+		    android:gravity="center_vertical"
+		    >
+		    <TextView
+            style="@style/mTextOne"
+            android:layout_width="fill_parent"
+            android:gravity="left|center_vertical"
+            android:text="2015-07-28 18:25" />
+		</LinearLayout>
+        	
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <LinearLayout 
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            >
+            
+            <TextView
+            style="@style/mTextOne"
+            android:gravity="left"
+            android:text="保修期" />
+            
+        </LinearLayout>
+        
+		<LinearLayout 
+		    android:layout_width="0dp"
+		    android:layout_height="fill_parent"
+		    android:layout_weight="2"
+		    android:orientation="horizontal"
+		    android:gravity="center_vertical"
+		    >
+		    <TextView
+            style="@style/mTextOne"
+            android:layout_width="fill_parent"
+            android:gravity="left|center_vertical"
+            android:text="2015-07-14 15:55" />
+		</LinearLayout>
+        	
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <LinearLayout 
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            >
+            
+            <TextView
+            style="@style/mTextOne"
+            android:gravity="left"
+            android:text="入库日期" />
+            
+        </LinearLayout>
+        
+		<LinearLayout 
+		    android:layout_width="0dp"
+		    android:layout_height="fill_parent"
+		    android:layout_weight="2"
+		    android:orientation="horizontal"
+		    android:gravity="center_vertical"
+		    >
+		    <TextView
+            style="@style/mTextOne"
+            android:layout_width="fill_parent"
+            android:gravity="left|center_vertical"
+            android:text="2015-06-58 15:24" />
+		</LinearLayout>
+        	
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <LinearLayout 
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            >
+            
+            <TextView
+            style="@style/mTextOne"
+            android:gravity="left"
+            android:text="室内地图" />
+            
+        </LinearLayout>
+        
+		<LinearLayout 
+		    android:layout_width="0dp"
+		    android:layout_height="fill_parent"
+		    android:layout_weight="2"
+		    android:orientation="horizontal"
+		    android:gravity="center_vertical"
+		    >
+		    <Button 
+		        style="@style/mButtonOne"
+		        android:layout_width="120dp"
+		        android:layout_height="fill_parent"
+		        android:text="查看"
+		        />
+		</LinearLayout>
+        	
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <LinearLayout 
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            >
+            
+            <TextView
+            style="@style/mTextOne"
+            android:gravity="left"
+            android:text="报障内容" />
+            
+        </LinearLayout>
+        
+		<LinearLayout 
+		    android:layout_width="0dp"
+		    android:layout_height="fill_parent"
+		    android:layout_weight="2"
+		    android:orientation="horizontal"
+		    android:gravity="center_vertical"
+		    >
+		    <EditText 
+		        style="@style/mEditTextOne"
+		        android:layout_width="fill_parent"
+		        android:layout_height="fill_parent"
+		        android:hint="故障说明"
+		        />
+		</LinearLayout>
+        	
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <LinearLayout 
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            >
+            
+            <TextView
+            style="@style/mTextOne"
+            android:gravity="left"
+            android:text="报障备注" />
+            
+        </LinearLayout>
+        
+		<LinearLayout 
+		    android:layout_width="0dp"
+		    android:layout_height="fill_parent"
+		    android:layout_weight="2"
+		    android:orientation="horizontal"
+		    android:gravity="center_vertical"
+		    >
+		    <EditText 
+		        style="@style/mEditTextOne"
+		        android:layout_width="fill_parent"
+		        android:layout_height="fill_parent"
+		        android:hint="故障备注"
+		        />
+		</LinearLayout>
+        	
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        >
+		<Button 
+		    style="@style/mButtonOne"
+		    android:layout_width="120dp"
+		    android:layout_height="fill_parent"
+		    android:text="保存"
+		    />
+			<ImageView android:layout_height="fill_parent" android:layout_width="5dp"/>
+		<Button 
+		    style="@style/mButtonOne"
+		    android:layout_width="120dp"
+		    android:layout_height="fill_parent"
+		    android:text="取消"
+		    />        
+    </LinearLayout>
+    
+</LinearLayout>

@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D4D4D4"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <include
+            android:layout_gravity="right"
+            layout="@layout/title_bar" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/amvlaycontent"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/topback"
+            android:baselineAligned="false"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="left|center_vertical"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/smTextContact"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center_vertical"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:maxLines="3"
+                    android:singleLine="false"
+                    android:text="@string/msg_addContact"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <Button
+                    android:id="@+id/smAddContact"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/buttonstyle3" />
+            </LinearLayout>
+        </LinearLayout>
+        <!--
+         <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:scrollbars="none" >
+         </ScrollView>
+        -->
+
+        <ListView
+            android:id="@+id/lstMessage"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/white"
+            android:cacheColorHint="#00000000"
+            android:divider="#00000000"
+            android:dividerHeight="2dp" >
+        </ListView>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/messageaffix"
+        android:layout_width="fill_parent"
+        android:layout_height="60dip"
+        android:background="@drawable/bg_footer"
+        android:visibility="visible" >
+
+        <Button
+            android:id="@+id/btnAddimage"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:background="@drawable/addimg_selector" />
+
+        <EditText
+            android:id="@+id/smMessageContent"
+            style="@style/search_text"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/smButtonMessage"
+            android:layout_toRightOf="@+id/btnAddimage"
+            android:background="@drawable/search_bar_left"
+            android:hint="@string/msg_inputMessage" />
+
+        <Button
+            android:id="@+id/smButtonMessage"
+            style="@style/search_text"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/search_bar_right"
+            android:text="@string/title_Send" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:background="@drawable/bg_footer" >
+
+        <Button
+            android:id="@+id/btnontouchspeak"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_toLeftOf="@+id/chkSMS"
+            android:layout_weight="1"
+            android:text="@string/ontouchspeak" />
+
+        <CheckBox
+            android:id="@+id/chkSMS"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:text="@string/sendSMS"
+            android:textColor="@color/black"
+            android:textSize="12dp" />
+
+        <CheckBox
+            android:id="@+id/chkReturn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:text="短信回执"
+            android:textColor="@color/black"
+            android:textSize="12dp" />
+    </LinearLayout>
+    <!--
+    <LinearLayout
+        android:id="@+id/smfootlayout"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:layout_gravity="center"
+        android:background="@drawable/footer"
+        android:gravity="left|center_vertical" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/backedittext"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="0dp" />
+
+            <EditText
+                android:id="@+id/smMessageContent"
+                android:layout_width="0dp"
+                android:layout_height="55dp"
+                android:layout_gravity="left|center_vertical"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="@string/msg_inputMessage"
+                android:maxLength="200"
+                android:textSize="12sp" >
+
+                <requestFocus />
+            </EditText>
+
+            <Button
+                android:id="@+id/smDeleteMessage"
+                android:layout_width="28dp"
+                android:layout_height="26dp"
+                android:layout_gravity="right|center_vertical"
+                android:background="@drawable/deletemessage" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/smButtonMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/buttonstyle2"
+            android:enabled="false"
+            android:text="@string/title_Send" />
+    </LinearLayout>
+    -->
+
+</LinearLayout>

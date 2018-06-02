@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="rcresize">还原</string>
+    <string name="rcdata">数据</string>
+    <string name="rcnextserise">下一列</string>
+    <string name="rcnextpoint">下一点</string>
+</resources>

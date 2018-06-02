@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp" >
+
+        <include layout="@layout/title_bar" />
+    </LinearLayout>
+    
+    <LinearLayout 
+		android:layout_width="match_parent"
+		android:layout_height="50dp"
+		android:orientation="horizontal"        
+        >
+        <TextView
+            android:id="@+id/act_New_ShiftOutInfo_TrainNum" 
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/btn_tab_left_selector"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:text="交班车次"
+            />
+        
+        <TextView
+            android:id="@+id/act_New_ShiftOutInfo_RollCall" 
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/btn_tab_right_selector"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:text="点名"
+            />
+    </LinearLayout>
+    
+     <FrameLayout
+        android:id="@+id/fl" 
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        >
+	</FrameLayout>
+	
+     
+     <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="vertical"
+        android:background="#D4D4D4"
+        android:gravity="center_horizontal"
+        >
+        
+        <Button
+        android:id="@+id/act_New_ShiftOutInfo_button"
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:text="接班"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:background="@color/green"
+        />
+        
+    </LinearLayout>
+
+</LinearLayout>
+

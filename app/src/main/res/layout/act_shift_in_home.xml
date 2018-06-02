@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#d4d4d4"
+    android:orientation="vertical" >
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+      >
+
+        <include layout="@layout/title_bar" />
+    </LinearLayout>
+   <LinearLayout 
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:layout_marginLeft="80dp"
+       android:layout_marginRight="80dp"
+       android:gravity="center"
+       android:orientation="vertical">
+       <Button 
+           android:id="@+id/taskShangshui"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:background="@drawable/btn_m_selector"
+           android:textSize="16sp"
+           android:text="@string/task_shangshui"/>
+       <Button 
+           android:id="@+id/taskStation"
+           android:layout_marginTop="10dp"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:textSize="16sp"
+           android:background="@drawable/btn_m_selector"
+           android:text="@string/task_station"/>
+       <Button 
+           android:id="@+id/taskWaitinghall"
+           android:layout_marginTop="10dp"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:textSize="16sp"
+           android:background="@drawable/btn_m_selector"
+           android:text="@string/task_waitinghall"/>
+       <Button 
+           android:id="@+id/taskCheckin"
+           android:layout_marginTop="10dp"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:textSize="16sp"
+           android:background="@drawable/btn_m_selector"
+           android:text="@string/task_checkin"/>
+       <Button 
+           android:id="@+id/taskExit"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:textSize="16sp"
+           android:background="@drawable/btn_m_selector"
+           android:layout_marginTop="10dp"
+           android:text="@string/task_exit"/>
+   </LinearLayout>
+
+</LinearLayout>

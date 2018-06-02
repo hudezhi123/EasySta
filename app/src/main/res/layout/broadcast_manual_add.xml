@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LayoutMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D4D4D4" >
+
+    <Button
+        android:id="@+id/btnSelArea"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@drawable/btn_big"
+        android:text="@string/broad_area_select"
+        android:textSize="18sp" >
+    </Button>
+
+    <RelativeLayout
+        android:id="@+id/LayoutRecord"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnSelArea"
+        android:layout_margin="5dp"
+        android:gravity="center" >
+
+        <Button
+            android:id="@+id/btnRecord"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/btn_fuc_selector"
+            android:text="@string/broad_record_audio"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btnPlay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/btn_fuc_selector"
+            android:enabled="false"
+            android:text="@string/broad_play"
+            android:textSize="18sp" >
+        </Button>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/LayoutBottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom|center"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_footer"
+        android:gravity="center" >
+
+        <Button
+            android:id="@+id/btnPost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_m_selector"
+            android:enabled="false"
+            android:text="@string/broad"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lstArea"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/LayoutBottom"
+        android:layout_below="@+id/LayoutRecord"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:background="#D4D4D4"
+        android:cacheColorHint="#00000000"
+        android:divider="@color/gray"
+        android:dividerHeight="1dip"
+        android:fadingEdge="none" >
+    </ListView>
+
+</RelativeLayout>

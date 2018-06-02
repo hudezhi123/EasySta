@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#d4d4d4"
+    android:orientation="vertical" >
+    <LinearLayout
+        android:id="@+id/titleView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:layout_alignParentTop="true"
+      >
+
+        <include layout="@layout/title_bar" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/shiftInDetailList"
+        android:layout_width="fill_parent"
+        android:layout_below="@id/titleView"
+        android:layout_height="match_parent" 
+        android:layout_marginBottom="50dp"
+        >
+    </ListView>
+    <!-- <LinearLayout 
+        android:id="@+id/btn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/shiftInDetailList"
+        android:layout_alignParentBottom="true"
+        android:background="#d4d4d4"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"> -->
+        <Button 
+            android:id="@+id/shiftInBtn"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="接班"
+            android:layout_below="@id/shiftInDetailList"
+            android:textSize="18sp"
+            android:layout_marginBottom="50dp"
+            android:visibility="gone"/>
+    <!-- </LinearLayout> -->
+<Button 
+    android:id="@+id/voiceBtn"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:text="语音播放"
+    android:textSize="18sp"
+    android:layout_alignParentBottom="true"
+    />
+</RelativeLayout>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearMain"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#D4D4D4"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/txtTRNO_PRO"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:singleLine="true"
+        android:textColor="@color/black"
+        android:text="D6851"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/txtSTRTSTN_TT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:singleLine="true"
+        android:textColor="@color/black"
+        android:text="西安北"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/txtTILSTN_TT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:singleLine="true"
+        android:textColor="@color/black"
+        android:text="宝鸡南"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/txtDepaTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:singleLine="true"
+        android:textColor="@color/black"
+        android:text="07：20"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/txtStationArrTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:singleLine="true"
+        android:textColor="@color/black"
+        android:text="--:--"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/txtStationDepaTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:singleLine="true"
+        android:textColor="@color/black"
+        android:text="07:20"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/txtStationAttr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:singleLine="true"
+        android:textColor="@color/black"
+        android:text="始发站"
+        android:textSize="20sp" />
+    
+    <TextView 
+        android:id="@+id/txtMiles"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:singleLine="true"
+        android:textColor="@color/black"
+        android:text="0"
+        android:textSize="20sp"
+        />
+
+</LinearLayout>

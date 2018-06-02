@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="horizontal" >
+    
+<TextView 
+        android:id="@+id/ReadFileGroup"
+        android:layout_width="0dp"
+        android:layout_weight="2"
+        android:layout_height="wrap_content"
+        android:text="种类：AB"
+        android:textColor="@color/black"
+        android:textSize="23dp"
+        android:background="@drawable/file_read_state"
+        />
+    
+<TextView 
+     android:id="@+id/removeChild"
+     android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="删除"
+        android:textColor="@color/black"
+        android:textSize="23dp"
+        android:background="@drawable/localfile_read_state"
+    />
+    
+</LinearLayout>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D4D4D4"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/title_bar" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#A4A4A4"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp"
+        android:paddingTop="2dp">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="2dp"
+            android:layout_weight="8"
+            android:background="@drawable/rounded_edittext">
+
+            <AutoCompleteTextView
+                android:id="@+id/edtSearch"
+                android:layout_width="fill_parent"
+                android:layout_height="36dp"
+                android:layout_toLeftOf="@+id/imgDel"
+                android:background="@null"
+                android:ems="10"
+                android:hint="@string/search"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:singleLine="true">
+
+                <requestFocus />
+            </AutoCompleteTextView>
+
+            <ImageView
+                android:id="@+id/imgDel"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/deletemessage" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="end|center_vertical"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/cb_select_all"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <easyway.Mobile.util.PullRefreshListView
+        android:id="@+id/scListContact"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginTop="-5dp"
+        android:layout_weight="1"
+        android:cacheColorHint="#00000000"
+        android:divider="@color/gray"
+        android:dividerHeight="1dip"
+        android:fadingEdge="none"
+        android:visibility="visible" />
+
+    <ExpandableListView
+        android:id="@+id/mlExpandableListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginTop="-1dip"
+        android:layout_weight="1"
+        android:background="@drawable/bg_list"
+        android:visibility="gone" />
+
+
+    <LinearLayout
+        android:id="@+id/smfootlayout"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_gravity="center"
+        android:background="@drawable/bg_footer"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/scButtonOk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_selector"
+            android:text="@string/OK" />
+
+        <Button
+            android:id="@+id/scButtonCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/btn_selector"
+            android:text="@string/Cancel" />
+    </LinearLayout>
+
+</LinearLayout>

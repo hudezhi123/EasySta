@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 交接班 -->
+    <string name="Shift_Title">交接班</string>
+    <string name="Shift_Task">重要事项</string>
+    <string name="Shift_Attendance">出勤情况</string>
+    <string name="Shift_Task_No">序&#160;&#160;&#160;&#160;号:</string>
+    <string name="Shift_Task_Level">优先级:</string>
+    <string name="Shift_Task_Publisher">发布人:</string>
+    <string name="Shift_Task_Content">内&#160;&#160;&#160;&#160;容:</string>
+    <string name="Shift_Task_Confirm">确认</string>
+    <string name="Shift_Task_SetFail">接班设置失败</string>
+    <string name="Shift_Task_SetSucc">成功接班</string>
+    <string name="Shift_Task_LEVEL_HIGH">高</string>
+    <string name="Shift_Task_LEVEL_NORMAL">中</string>
+    <string name="Shift_Task_LEVEL_LOW">低</string>
+    <string name="Shift_Atte_No">序号</string>
+    <string name="Shift_Atte_Name">姓名</string>
+    <string name="Shift_Atte_Status">状态</string>
+    <string name="Shift_Atte_Dep">部门</string>
+    
+    <string name="Shift_Atte_Summary">应到%1$d人,实到%2$d人,请假%3$d人,缺勤%4$d人</string>
+
+</resources>

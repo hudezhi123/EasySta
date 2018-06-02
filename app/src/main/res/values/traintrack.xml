@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="TT_direction">方向</string>
+    <string name="TT_dup">上行</string>
+    <string name="TT_ddown">下行</string>
+    <string name="TT_trackstate">股道状态:</string>
+    <string name="TT_tsbusy">占用</string>
+    <string name="TT_tsprebusy">预占用</string>
+    <string name="TT_tsfree">空闲</string>
+</resources>

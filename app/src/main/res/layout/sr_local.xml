@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D4D4D4">
+
+    <ListView
+        android:id="@+id/listView_sr_local"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/LayoutBottom"
+        android:cacheColorHint="#D4D4D4"
+        android:divider="@null" />
+
+
+    <LinearLayout
+        android:id="@+id/LayoutBottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="bottom|center"
+        android:background="@drawable/bg_footer"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="5dp">
+
+        <Button
+            android:id="@+id/btn_refresh"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/btn_m_selector"
+            android:onClick="onClick"
+            android:text="@string/refresh"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D4D4D4"
+    android:padding="2dp"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:id="@+id/LinearSchedule"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#D4D4D4"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:paddingBottom="3dp"
+            android:background="#C2C2C2"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:text="@string/trainNo"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/txtTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:text="@string/DEPATIME_PTTI"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/txtStation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:text="@string/station_terminal"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:text="@string/platform"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/txtStationArrTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:text="@string/Train_Type"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/txtTimeZs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:text="@string/station_timezs"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/txtRemark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:text="@string/remark"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+            
+            <TextView
+                android:id="@+id/txtMiles"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:text="里程数"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+            
+        </LinearLayout>
+
+
+    	<ListView
+        		android:id="@+id/lstSche"
+      			android:layout_width="match_parent"
+      			android:layout_height="wrap_content"
+      			android:layout_marginTop="-1dp"
+      			android:cacheColorHint="#00000000"
+      			android:divider="#C4C4C4"
+      			android:dividerHeight="1dip"
+      			android:footerDividersEnabled="false"
+      			android:headerDividersEnabled="false" />
+       
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearRemark"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#D4D4D4"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/txtTrainInfo"
+            android:textColor="@color/black"
+            android:textSize="20sp" 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:id="@+id/LinearStationInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+        </LinearLayout>
+    
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:paddingTop="2dp"
+            android:paddingBottom="3dp"
+            android:background="#C2C2C2"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:text="@string/Train_Type"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:text="@string/train_complement"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:text="@string/Train_Type"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:text="@string/train_complement"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+        </LinearLayout>
+        
+        <ListView
+            android:id="@+id/lstTrainTypes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+        </ListView>
+
+    </LinearLayout>
+    
+    <LinearLayout 
+    	android:orientation="horizontal" 
+    	android:layout_width="wrap_content" 
+    	android:layout_height="wrap_content" 
+    	android:layout_marginBottom="15dp" 
+    	android:layout_alignParentBottom="true" 
+    	android:layout_centerHorizontal="true">
+    	
+        <ImageView
+            android:id="@+id/imgOrigin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:clickable="true"
+            android:padding="20dp"
+            android:src="@drawable/guide_round" />
+
+        <ImageView
+            android:id="@+id/imgTerminal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:clickable="true"
+            android:padding="20dp"
+            android:src="@drawable/guide_round" />
+
+        <ImageView
+            android:id="@+id/imgRemark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:clickable="true"
+            android:padding="20dp"
+            android:src="@drawable/guide_round" />
+    </LinearLayout>
+
+</RelativeLayout>

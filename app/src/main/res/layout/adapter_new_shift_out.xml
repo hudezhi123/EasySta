@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/Adapter_newShiftOut"
+    android:background="#D4D4D4"
+     >
+    
+	<TextView 
+	    android:id="@+id/Adapter_newShiftOut_TaskType"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="任务类型："
+	    android:textColor="@color/black"
+	    android:textSize="18dp"
+	    android:layout_marginTop="15dp"
+	    android:layout_marginLeft="20dp"
+	    />
+	
+	<TextView 
+	    android:id="@+id/Adapter_newShiftOut_TaskName"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="股道"
+	    android:textColor="@color/black"
+	    android:textSize="18dp"
+	    android:layout_marginTop="15dp"
+	    android:layout_toRightOf="@id/Adapter_newShiftOut_TaskType"
+	    />
+	
+	<TextView 
+	    android:id="@+id/Adapter_newShiftOut_People"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="交班人："
+	    android:textColor="@color/black"
+	    android:textSize="18dp"
+	    android:layout_below="@id/Adapter_newShiftOut_TaskType"
+	    android:layout_marginLeft="20dp"
+	    android:layout_marginTop="15dp"
+	    />
+	
+	<TextView 
+	    android:id="@+id/Adapter_newShiftOut_PeopleName"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="王宇"
+	    android:textColor="@color/black"
+	    android:textSize="18dp"
+	    android:layout_below="@id/Adapter_newShiftOut_TaskType"
+	    android:layout_toRightOf="@id/Adapter_newShiftOut_People"
+	    android:layout_marginTop="15dp"
+	    />
+    
+	<TextView 
+	    android:id="@+id/Adapter_newShiftOut_Time1"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="交班时间："
+	    android:textColor="@color/black"
+	    android:textSize="18dp"
+	    android:layout_below="@id/Adapter_newShiftOut_People"
+	    android:layout_marginLeft="20dp"
+	    android:layout_marginTop="15dp"
+	    />
+	
+	<TextView 
+	    android:id="@+id/Adapter_newShiftOut_Time"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="2015-11-05  13：23：24"
+	    android:textColor="@color/black"
+	    android:textSize="12dp"
+	    android:layout_below="@id/Adapter_newShiftOut_People"
+	    android:layout_toRightOf="@id/Adapter_newShiftOut_Time1"
+	    android:layout_marginTop="19dp"
+	    />
+	
+	<Button 
+	    android:id="@+id/Adapter_newShiftOut_Info"
+	    android:layout_width="90dp"
+	    android:layout_height="50dp"
+	    android:text="接班信息"
+	    android:textSize="15dp"
+	    android:layout_alignParentRight="true"
+	    android:layout_marginRight="30dp"
+	    android:layout_marginTop="10dp"
+	    />
+	
+	<TextView 
+	    android:id="@+id/Adapter_newShiftOut_Attachment"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:background="@drawable/img_attach"
+	    android:layout_alignParentRight="true"
+	    android:layout_below="@id/Adapter_newShiftOut_Info"
+	    android:layout_marginRight="10dp"
+	    />
+	
+</RelativeLayout>

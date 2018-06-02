@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 上水管理 -->
+    <string name="Watering_Title">上水管理</string>
+    <string name="Watering_Completed">已完成</string>
+    <string name="Watering_Processing">待完成</string>
+    <string name="Watering_TrainNo">车次</string>
+    <string name="Watering_Track">股道</string>
+    <string name="Watering_Arrive">到站</string>
+    <string name="Watering_Leave">出发</string>
+    <string name="Watering_Control">操作</string>
+    <string name="Watering_CompleteTime">完成时间</string>
+
+
+    <string name="Watering_Request">申请</string>
+    <string name="Watering_ApprovalReject">审核驳回</string>
+    <string name="Watering_Approvaling">审核中</string>
+    <string name="Watering_Complete">完成</string>
+    <string name="Watering_ExpProcessing">请求操作失败</string>
+
+
+</resources>

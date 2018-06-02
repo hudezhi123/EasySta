@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/shift_in_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <include layout="@layout/title_bar" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layContent"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.74"
+        android:orientation="vertical" >
+
+        <ListView
+            android:id="@+id/gvList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginTop="-5dp"
+            android:background="#D4D4D4"
+            android:cacheColorHint="#00000000"
+            android:divider="@color/gray"
+            android:dividerHeight="1dip"
+            android:fadingEdge="none" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layShiftOut"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:background="@drawable/bg_footer"
+        android:gravity="center" >
+
+        <Button
+            android:id="@+id/btnRecordShiftIn"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_m_selector"
+            android:gravity="center"
+            android:text="@string/Shift_RecordVoice"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btnPlayShiftVoice"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_m_selector"
+            android:gravity="center"
+            android:text="@string/Shift_PlaySound"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btnUploadShiftInVoice"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_m_selector"
+            android:enabled="false"
+            android:gravity="center"
+            android:text="@string/Shift_Out_Upload"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btnShiftIn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_commit_small"
+            android:gravity="center"
+            android:text="@string/Shift_In"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</LinearLayout>

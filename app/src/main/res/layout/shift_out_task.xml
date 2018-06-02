@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_content"
+    android:orientation="vertical" >
+    <LinearLayout
+        android:id="@+id/layTop"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:gravity="center" >
+        
+        <Button
+            android:id="@+id/btnReturn"
+            android:layout_width="72dp"
+            android:layout_height="42dp"
+            android:background="@drawable/bg_btn_return"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:gravity="center" />
+        <LinearLayout
+        	android:layout_width="20dp"
+            android:layout_height="wrap_content"
+        	></LinearLayout>	
+
+        <TextView
+            android:id="@+id/labTitle"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/Shift_Out_Task"
+            android:textColor="@color/white"
+            android:textSize="30dp" />
+        
+        <LinearLayout
+        	android:layout_width="90dp"
+            android:layout_height="wrap_content"
+        	></LinearLayout>
+        
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layContent"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.74"
+        android:orientation="vertical" >
+        <GridView
+            android:id="@+id/gvList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:numColumns="1" >
+        </GridView>
+        
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/layBottom"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:background="@drawable/footer"
+        android:gravity="left" >
+
+        <Button
+            android:id="@+id/btnShiftIn"
+            android:layout_width="72dp"
+            android:layout_height="42dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/bg_btn_green"
+            android:gravity="center"
+            android:text="@string/Shift_In"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+
+    </RelativeLayout>
+
+</LinearLayout>

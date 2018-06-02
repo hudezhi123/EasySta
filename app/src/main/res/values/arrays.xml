@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="fileEndingImage">
+        <item>.png</item>
+        <item>.gif</item>
+        <item>.jpg</item>
+        <item>.jpeg</item>
+        <item>.bmp</item>
+    </array>
+    <array name="fileEndingAudio">
+        <item>.mp3</item>
+        <item>.wav</item>
+        <item>.ogg</item>
+        <item>.midi</item>
+    </array>
+    <array name="fileEndingVideo">
+        <item>.mp4</item>
+        <item>.rmvb</item>
+        <item>.avi</item>
+        <item>.flv</item>
+        <item>.3gp</item>
+        <item>.wmv</item>
+    </array>
+    <array name="fileEndingPackage">
+        <item>.jar</item>
+        <item>.zip</item>
+        <item>.rar</item>
+        <item>.gz</item>
+        <item>.apk</item>
+        <item>.img</item>
+    </array>
+    <array name="fileEndingWebText">
+        <item>.htm</item>
+        <item>.html</item>
+        <item>.php</item>
+        <item>.jsp</item>
+    </array>
+    <array name="fileEndingText">
+        <item>.txt</item>
+        <item>.java</item>
+        <item>.c</item>
+        <item>.cpp</item>
+        <item>.py</item>
+        <item>.xml</item>
+        <item>.json</item>
+        <item>.log</item>
+    </array>
+    <array name="fileEndingWord">
+        <item>.doc</item>
+        <item>.docx</item>
+    </array>
+    <array name="fileEndingExcel">
+        <item>.xls</item>
+        <item>.xlsx</item>
+    </array>
+    <array name="fileEndingPPT">
+        <item>.ppt</item>
+        <item>.pptx</item>
+    </array>
+    <array name="fileEndingPdf">
+        <item>.pdf</item>
+    </array>
+    <array name="ImageSource">
+        <item>相册</item>
+        <item>拍照</item>
+    </array>
+    <array name="MsgResend">
+        <item>重新发送</item>
+        <item>取消</item>
+    </array>
+    <array name="MsgDelete">
+        <item>删除消息</item>
+        <item>取消</item>
+    </array>
+    <array name="MsgTransmit">
+        <item>删除消息</item>
+        <item>转发消息</item>
+        <item>取消</item>
+    </array>
+
+    <string-array name="task_TaskLevel_Values">
+        <item>低</item>
+        <item>中</item>
+        <item>高</item>
+    </string-array>
+    <string-array name="task_ExcSta_Values">
+        <item>未开始</item>
+        <item>到岗</item>
+        <item>完成</item>
+    </string-array>
+
+    <array name="SwitchCameraValues">
+        <item>前置</item>
+        <item>后置</item>
+    </array>
+    <array name="classifications">
+        <item>Camera</item>
+        <item>Video</item>
+    </array>
+    <array name="suppliers">
+        <item>苏州博远容天</item>
+        <item>北京中景合天</item>
+    </array>
+
+    <array name="group_danger">
+        <item>一班</item>
+        <item>二班</item>
+        <item>三班</item>
+        <item>四班</item>
+    </array>
+
+    <array name="cate_name">
+        <item>禁止携带</item>
+        <item>限量携带</item>
+    </array>
+
+    <array name="where_to_go">
+        <item>收缴</item>
+        <item>放弃</item>
+        <item>带回</item>
+    </array>
+
+    <array name="position_name">
+        <item>值机</item>
+        <item>手检</item>
+    </array>
+</resources>

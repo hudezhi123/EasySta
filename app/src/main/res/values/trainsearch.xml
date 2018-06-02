@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="TS_ByStationName">车站查询</string>
+    <string name="TS_ByTrainNo">车次查询</string>
+    <string name="TS_TrainNo">车次：</string>
+    <string name="TS_KeyBoard_A">A</string>
+    <string name="TS_KeyBoard_B">B</string>
+    <string name="TS_KeyBoard_C">C</string>
+    <string name="TS_KeyBoard_D">D</string>
+    <string name="TS_KeyBoard_E">E</string>
+    <string name="TS_KeyBoard_F">F</string>
+    <string name="TS_KeyBoard_G">G</string>
+    <string name="TS_KeyBoard_H">H</string>
+    <string name="TS_KeyBoard_I">I</string>
+    <string name="TS_KeyBoard_J">J</string>
+    <string name="TS_KeyBoard_K">K</string>
+    <string name="TS_KeyBoard_L">L</string>
+    <string name="TS_KeyBoard_M">M</string>
+    <string name="TS_KeyBoard_N">N</string>
+    <string name="TS_KeyBoard_O">O</string>
+    <string name="TS_KeyBoard_P">P</string>
+    <string name="TS_KeyBoard_Q">Q</string>
+    <string name="TS_KeyBoard_R">R</string>
+    <string name="TS_KeyBoard_S">S</string>
+    <string name="TS_KeyBoard_T">T</string>
+    <string name="TS_KeyBoard_U">U</string>
+    <string name="TS_KeyBoard_V">V</string>
+    <string name="TS_KeyBoard_W">W</string>
+    <string name="TS_KeyBoard_X">X</string>
+    <string name="TS_KeyBoard_Y">Y</string>
+    <string name="TS_KeyBoard_Z">Z</string>
+    <string name="TS_KeyBoard_One">1</string>
+    <string name="TS_KeyBoard_Two">2</string>
+    <string name="TS_KeyBoard_Three">3</string>
+    <string name="TS_KeyBoard_Four">4</string>
+    <string name="TS_KeyBoard_Five">5</string>
+    <string name="TS_KeyBoard_Six">6</string>
+    <string name="TS_KeyBoard_Seven">7</string>
+    <string name="TS_KeyBoard_Eight">8</string>
+    <string name="TS_KeyBoard_Nine">9</string>
+    <string name="TS_KeyBoard_Zero">0</string>
+    <string name="TS_KeyBoard_Delete">←</string>
+    <string name="TS_KeyBoard_Back">返回</string>
+    <string name="TS_KeyBoard_Clear">清空</string>
+    <string name="TS_KeyBoard_Search">查询</string>
+    <string name="TS_exchange">起终交换</string>
+    <string name="TS_Title_TrainNo">车次</string>
+    <string name="TS_Title_StationOrigin">发站</string>
+    <string name="TS_Title_StationArr">到站</string>
+    <string name="TS_Title_DepTime">发点</string>
+    <string name="TS_Title_ArrTime">到点</string>
+    <string name="TS_Result">共 %1$s 趟车</string>
+
+</resources>

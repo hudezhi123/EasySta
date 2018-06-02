@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_new_srnet"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="easyway.Mobile.SiteRules.NewSRNetActivity">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerview_srnet"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_list" />
+
+</RelativeLayout>

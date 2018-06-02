@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 站内规章 -->
+    <string name="SR_Title">站内规章</string>
+    <string name="SR_Local">本地下载</string>
+    <string name="SR_Net">规章浏览</string>
+    <string name="SR_InputTitleOrKey">输入标题或关键字</string>
+    <string name="SR_Type">类型</string>
+    <string name="SR_Gotopage">跳&#160;&#160;&#160;&#160;转</string>
+    <string name="SR_GotoRange">已超出范围，有效范围为 1 - %1$d！</string>
+    <string name="SR_DownloadEd">已下载</string>
+    <string name="SR_DownloadFail">下载失败</string>
+    <string name="SR_FileNotExists">文件不存在</string>
+    <string name="SR_FileNotSafe">文件被篡改或未下载完全，建议删除后重新下载</string>
+    <string name="SR_FileDelete">删除文件</string>
+
+
+    <string name="Sewage_Water">污水抽取</string>
+</resources>

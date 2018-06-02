@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 广播 -->
+    <string name="broad_manual">语音广播</string>
+    <string name="broad_area">广播区域</string>
+    <string name="broad_area_select">选择广播区域</string>
+    <string name="broad">广播</string>
+    <string name="broad_list">广播记录</string>
+    <string name="broad_play">播放</string>
+    <string name="broad_play_waitting">排队中</string>
+    <string name="broad_record_audio">录音</string>
+    <string name="broad_category">分类</string>
+    <string name="broad_record_Empty">音频文件不存在</string>
+    <string name="broad_record_play_exception">播放音频失败</string>
+    <string name="broad_area_Empty">广播区域不能为空</string>
+    <string name="broad_area_post_success">广播成功</string>
+    <string name="broad_OperatingArea">广播区域</string>
+    <string name="broad_OpStatus">广播状态</string>
+    <string name="broad_PlayTime">播放时间</string>
+    <string name="broad_Operator">操作人</string>
+
+    <string name="broad_record_play_exception_from_server">从服务器上播放语音失败</string>
+    <string name="broad_spec_subject">专题广播</string>
+    <string name="broad_spec_subject_type">专题类型</string>
+    <string name="broad_spec_subject_title">专题标题</string>
+    <string name="broad_spec_subject_content">专题内容</string>
+    <string name="broad_spec_subject_NonSel">====请选择====</string>
+    <string name="broad_spec_Title_Non_Sel">必须指定专题标题</string>
+    <string name="broad_spec_Subject_Fail">专题广播失败</string>
+    <string name="broad_spec_subject_view">查看</string>
+    <string name="broad_NoPermission">无广播权限</string>
+    <string name="title_Special">专题广播</string>
+     <string name="broad_Audit_Remote_Path">Uploaded/Broadcast/</string>
+<!--   <string name="fm_record_path">/sceneNews/</string>
+   
+     -->  
+    <string name="broad_getdata_fail">获取数据失败</string>
+    
+    <string name="broad_select_area">选择广播区域</string>
+    <string name="broad_select_category">选择专题类型</string>
+    <string name="broad_select_title">选择专题标题</string>
+    <string name="broad_subject_play_fail">播放失败</string>
+    <string name="broad_subject_play_succeed">播放成功</string>
+    <string name="broad_notify_select_area">请先选择广播区域</string>
+    <string name="broad_notify_select_category">请先选择专题类型</string>
+    <string name="broad_notify_select_broadcast">必须指定专题标题</string>
+    <string name="broad_notify_nodata">没有数据</string>
+
+</resources>

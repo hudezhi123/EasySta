@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_mainfram"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:id="@+id/layTopTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:background="@drawable/ic_btn_title_background"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/title"
+                style="@style/title_bar_title_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dip"
+                android:layout_marginRight="8dip"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="@string/app_name"
+                android:textSize="28sp" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="8dip"
+            android:background="@drawable/btn_set_selector" />
+
+    </FrameLayout>
+
+    <GridView
+        android:id="@+id/gvFunction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layoutAnimation="@anim/layout_grid_fade"
+        android:numColumns="3" />
+
+</LinearLayout>
